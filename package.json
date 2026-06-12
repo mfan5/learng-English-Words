@@ -1,0 +1,14 @@
+{
+  "name": "learng-english-words",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "images": "node scripts/download-images.mjs",
+    "verify:assets": "node scripts/verify-assets.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.2"
+  }
+}

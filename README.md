@@ -8,8 +8,21 @@
 
 ## 当前进度
 
-- 产品结构和视觉方向已确认
-- 第一版计划收录约 120 个高频生活物品
-- 下一步：实现可直接使用的响应式单页网站
+- 6 个生活场景、120 张词卡
+- 真实图片均下载到项目本地并压缩为 WebP
+- 支持单词和例句发音
+- 支持按日期记录“今日学过”
 
 详细设计见 [产品设计文档](docs/superpowers/specs/2026-06-12-everyday-english-objects-design.md)。
+
+## 本地使用
+
+```bash
+npm install
+npm test
+python -m http.server 4173
+```
+
+然后访问 `http://localhost:4173`。
+
+图片来源与许可证记录在 `assets/images/ATTRIBUTION.json`。运行 `npm run images` 可从开放图片源补齐缺失资源，运行 `npm run verify:assets` 可检查图片完整性。
